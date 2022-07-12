@@ -19,48 +19,23 @@
 <br>
 <Div class="DisplayHolder">
     <a href="#Codes"><img src="Pic\Code.png" alt="" class="DisplayImage" ></a>
-    <a href="pages\Games.html"><img src="Pic\Sprite-0001.png" alt="" class="DisplayImage" ></a>
+    <a href="pages\Games.html"><img src="Pic\Sprite-0001.png" alt="" class="DisplayImage" onmouseover="changeimg(1)" onmouseout="returnimg(1)"></a>
     <a href="#Other"><img src="Pic\FountainPlaze2.png" alt="" class="DisplayImage" ></a>
 
 </Div>
 
 </body>
 <script>
-//     window.onload=function(){
-        
-//         for (let index = 0; index < 50; index++) {
-//         ajax_get('https://api.thecatapi.com/v1/images/search?size=full', function(data) {
-//         var element=document.createElement("div");
-//         var image=document.createElement("img");
-//         image.src=data[0]["url"];
-//         element.className="snowflake";
-//         element.appendChild(image);
-//         document.body.appendChild(element);}       
-//         );
-//     }
-   
-//     }
-//     function ajax_get(url, callback) {
-//      var xmlhttp = new XMLHttpRequest();
-//      xmlhttp.onreadystatechange = function() {
-//         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) 
-//         {
-//          console.log('responseText:' + xmlhttp.responseText);
-//              try 
-//                 {
-//                       var data = JSON.parse(xmlhttp.responseText);
-//                 } 
-//             catch (err) 
-//                 {
-//                     console.log(err.message + " in " + xmlhttp.responseText);
-//                     return;
-//                 }
-//                 callback(data);
-//         }
-//   };
 
-//   xmlhttp.open("GET", url, true);
-//   xmlhttp.send();
-// }
+function changeimg(no)
+{
+  console.log("img");
+  document.getElementsByClassName("DisplayImage")[no].src = "Pic/Sprite-0002.png";
+}
+function returnimg(no)
+{
+  console.log("img");
+  document.getElementsByClassName("DisplayImage")[no].src = "Pic/Sprite-0001.png";
+}
 </script>
 </html>

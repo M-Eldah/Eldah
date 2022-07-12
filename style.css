@@ -43,6 +43,7 @@ body {
   max-width: 400px;
   min-width: 200px;
   height: 1000px;
+  opacity: 0.7;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: opacity 1s;
@@ -50,7 +51,7 @@ body {
 }
 
 .DisplayImage:hover {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .DisplayHolder {
